@@ -30,4 +30,4 @@ npm install express openai cors
 "scripts": {
     "start": "node server.js"
   },
-```# dalle3-tutorial-envSetting
+```
