@@ -3,13 +3,13 @@
 ## 1. リポジトリをクローンする
 
 ```bash
-git clone
+git clone https://github.com/yuyuyu2118/dalle3-tutorial-envSetting
 ```
 
 ## 2. ディレクトリに移動する
 
 ```bash
-cd
+cd dalle3-tutorial-envSetting
 ```
 
 ## 3. nodeを初期化する
@@ -24,10 +24,16 @@ npm init -y
 npm install express openai cors
 ```
 
-## 5. package.jsonのスクリプトを修正する
+## 5. package.jsonのスクリプトを追加する
 
 ```json
 "scripts": {
-    "start": "node server.js"
-  },
+  "start": "node server.js"
+},
+```
+
+## 6. npm startでサーバーを起動する
+
+```bash
+npm start
 ```
