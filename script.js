@@ -1,5 +1,6 @@
 const form = document.querySelector('form');
 const input = document.querySelector('input');
+const imageContainer = document.getElementById('image-container');
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -20,4 +21,5 @@ async function generateImage(prompt) {
   // レスポンスのJSONを取得する
   const { message } = await response.json();
   console.log(message);
+  imageContainer.innerHTML = `${message}`;
 }
